@@ -1,6 +1,8 @@
+#! -*- coding: utf-8 -*-
 """
 generate dataset for training
 """
+from __future__ import print_function
 import csv
 import numpy as np
 
@@ -18,7 +20,7 @@ def model(x):
 # 产生训练数据, 数据存储格式为 x0, x1, y
 # size: 产生size条训练数据
 def gen_dataset(size):
-    with open('train.csv', 'w', newline='') as csvfile:
+    with open('train.csv', 'w') as csvfile:
         csvwriter = csv.writer(csvfile)
         for _ in range(size):
             # 随机产出输入数据, 范围为0~10
