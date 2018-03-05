@@ -31,6 +31,6 @@ def gen_dataset(size):
             csvwriter.writerow(list(train_x) + [train_y,])
 
 if __name__ == '__main__':
-    print('generate dataset for trainning')
+    print('generate dataset for training')
     gen_dataset(10000)
     print('end')
